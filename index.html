@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container navbar">
+        <div class="header-logo">
+          <img src="/assets/images/logo.jpeg" alt="Candy Store Logo" />
+        </div>
+        <div class="header-nav">
+          <div class="header-nav-top">
+            <ul>
+              <li><a href="#">khuyến mãi</a></li>
+              <li><a href="#">Liên lạc</a></li>
+              <li><a href="#">Tài khoản</a></li>
+            </ul>
+          </div>
+          <hr />
+          <div class="header-nav-bottom">
+            <ul>
+              <li><a href="#">Sản phẩm</a></li>
+              <li>
+                <a href="#">Loại sản phẩm</a
+                ><i class="fa-solid fa-angle-down"></i>
+              </li>
+              <li><a href="#">Dịch vụ</a></li>
+              <li><a href="#">Tin tức</a></li>
+              <li>
+                <a href="#">Thương hiệu</a
+                ><i class="fa-solid fa-angle-down"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <section class="banner">
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <img src="assets/images/banner_1.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/images/banner_2.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img src="assets/images/banner_3.jpg" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br />
+
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </section>
+
+        <section class="products">
+          <h2>Products</h2>
+          <div class="product-items">
+            <div class="product-item">
+              <img src="assets/images/product_1.png" alt="Product 1" />
+              <h3>Snack phô mai</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+            <div class="product-item">
+              <img src="assets/images/product_2.png" alt="Product 2" />
+              <h3>Snack cà chua</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+            <div class="product-item">
+              <img src="assets/images/product_3.png" alt="Product 3" />
+              <h3>Snack khoai tây</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+            <div class="product-item">
+              <img src="assets/images/product_4.png" alt="Product 1" />
+              <h3>Đậu phộng rang muối</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+            <div class="product-item">
+              <img src="assets/images/product_5.png" alt="Product 2" />
+              <h3>Hạt dinh dưỡng</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+            <div class="product-item">
+              <img src="assets/images/product_6.png" alt="Product 3" />
+              <h3>Đậu hà lan lắc muối</h3>
+              <p>Ăn vặt ngon miệng</p>
+            </div>
+          </div>
+        </section>
+        <hr />
+        <section class="promo">
+          <div class="container">
+            <div class="promo-items">
+              <div class="promo-item">
+                <div class="promo-image">
+                  <img
+                    src="assets/images/promo_1.jpg"
+                    alt="Promotional Image"
+                  />
+                </div>
+                <div class="promo-title">
+                  <h2>Khuyến mãi</h2>
+                  <p>Theo dõi các chương trình khuyến mãi hấp dẫn hàng tuần</p>
+                </div>
+              </div>
+              <div class="promo-item">
+                <div class="promo-image">
+                  <img
+                    src="assets/images/promo_2.jpg"
+                    alt="Promotional Image"
+                  />
+                </div>
+                <div class="promo-title">
+                  <h2>Tin tức - Thời sự</h2>
+                  <p>
+                    Cập nhật các thông tin về những sự kiện làm mưa làm gió kịp
+                    thời đến với bạn
+                  </p>
+                </div>
+              </div>
+              <div class="promo-item">
+                <div class="promo-image">
+                  <img
+                    src="assets/images/promo_3.jpg"
+                    alt="Promotional Image"
+                  />
+                </div>
+                <div class="promo-title">
+                  <h2>Liên hệ</h2>
+                  <p>Thông tin địa chỉ và số liên hệ của cửa hàng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Candy shop</h4>
+            <ul>
+              <li><a href="#">Về chúng tôi</a></li>
+              <li><a href="#">Dịch vụ</a></li>
+              <li><a href="#">Bảo mật</a></li>
+              <li><a href="#">Chương trình khuyến mãi</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Hỗ trợ</h4>
+            <ul>
+              <li><a href="#">Hotline</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Thông tin liên quan</a></li>
+              <li><a href="#">Trạng thái đơn hàng</a></li>
+              <li><a href="#">Thông tin thanh toán</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Sản phẩm</h4>
+            <ul>
+              <li><a href="#">Snack</a></li>
+              <li><a href="#">Hạt dinh dưỡng</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Giới thiệu</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fa-solid fa-map"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2024 Candy shop. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

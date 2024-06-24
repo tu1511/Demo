@@ -1,0 +1,324 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header styles */
+.navbar {
+  background-color: #18954c;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+}
+
+.header-logo img {
+  width: 100px;
+  padding: 10px;
+  height: auto;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-nav li {
+  list-style: none;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-nav hr {
+  border: 1px solid white;
+  margin: 10px 0px;
+}
+
+.header-nav-top ul {
+  display: flex;
+  justify-content: end;
+  gap: 100px;
+}
+
+.header-nav-bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+.header-nav-bottom .fa-solid {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* Main content styles */
+.main {
+  padding-bottom: 50px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  height: 600px;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Products */
+.products {
+  margin-top: 40px;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: calc(33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 30px;
+}
+
+.product-item img {
+  width: 50%;
+  height: auto;
+}
+
+.product-item h3 {
+  margin: 10px 0;
+}
+
+.main hr {
+  border: 1px solid rgb(212, 205, 205);
+}
+
+/* Promo section styles */
+.promo {
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.promo-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 120px;
+  gap: 50px;
+  margin: 20px;
+}
+
+.promo-item {
+  display: flex;
+  align-items: center;
+}
+
+.promo-title {
+  width: 80%;
+}
+
+.promo-item h2 {
+  margin: 10px 20px;
+  font-size: 24px;
+}
+
+.promo-item p {
+  margin: 0 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.promo-image {
+  width: 200px;
+  height: auto;
+}
+
+.promo-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .promo-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Footer styles */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 100px;
+}
+
+.footer {
+  background-color: #717171;
+  padding: 50px 0 0 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #000000;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 300;
+  color: #000000;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #000000;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 10px;
+  background-color: rgb(93, 85, 85);
+  padding: 20px;
+}
+
+.footer-copyright p {
+  color: white;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
