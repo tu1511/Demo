@@ -30,3 +30,13 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+// header bar
+document.addEventListener("DOMContentLoaded", () => {
+  const headerIcon = document.getElementById("icon");
+  const headerNav = document.querySelector(".header-nav");
+
+  headerIcon.addEventListener("click", () => {
+    headerNav.classList.toggle("active");
+  });
+});
